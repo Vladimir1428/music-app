@@ -40,6 +40,7 @@ class ArtistFragment : Fragment() {
                 layoutManager = LinearLayoutManager(context)
                 adapter = ArtistAdapter(artists)
             }
+            artistBinding.artistsAmount.text = if(artists.size > 1 || artists.isEmpty()) "${artists.size} artists" else "${artists.size} artist"
         }
     }
 

@@ -10,12 +10,12 @@ class HomeTabAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            0 -> ArtistFragment()
+            2 -> ArtistFragment()
             else -> Fragment()
         }
     }
 
     companion object {
-        private const val TABS_AMOUNT = 4
+        private const val TABS_AMOUNT = 5
     }
 }

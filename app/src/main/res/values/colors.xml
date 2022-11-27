@@ -13,4 +13,5 @@
     <color name="transparent">#00FFFFFF</color>
     <color name="light_grey">#E1E1E1</color>
     <color name="grey">#616161</color>
+    <color name="tab_divider_light_grey">#EEEEEE</color>
 </resources>

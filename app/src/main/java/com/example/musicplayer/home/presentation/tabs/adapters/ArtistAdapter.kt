@@ -9,12 +9,13 @@ import com.example.musicplayer.home.presentation.tabs.model.UiArtist
 
 class ArtistAdapter(private val artists: List<UiArtist>) :
     RecyclerView.Adapter<ArtistAdapter.ArtistViewHolder>() {
+
     class ArtistViewHolder(private val artistItemBinding: ArtistItemBinding) :
         RecyclerView.ViewHolder(artistItemBinding.root) {
         fun onBind(uiArtist: UiArtist) {
             artistItemBinding.artistNameTv.text = uiArtist.name
-            artistItemBinding.albumsAmount.text = uiArtist.albumsAmount.toString()
-            artistItemBinding.songsAmount.text = uiArtist.songsAmount.toString()
+            artistItemBinding.albumsAmountTv.text = if (uiArtist.albumsAmount > 1) "${uiArtist.albumsAmount} Albums" else "${uiArtist.albumsAmount} Album"
+            artistItemBinding.songsAmountTv.text = if (uiArtist.songsAmount > 1) "${uiArtist.songsAmount} Songs" else "${uiArtist.songsAmount} Song"
             Glide.with(artistItemBinding.root.context)
                 .load(uiArtist.imgUrl)
                 .into(artistItemBinding.artistImg)

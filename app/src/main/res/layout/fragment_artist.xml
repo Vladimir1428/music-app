@@ -7,8 +7,8 @@
     tools:context=".home.presentation.tabs.ArtistFragment">
 
     <TextView
-        android:id="@+id/artists"
-        style="@style/sub_text"
+        android:id="@+id/artists_amount"
+        style="@style/item_header"
         android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="85 artists" />
-
 
     <TextView
         android:id="@+id/date_added_sort"
@@ -35,9 +34,9 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@color/light_grey"
-        app:layout_constraintTop_toBottomOf="@id/artists" />
+        app:layout_constraintTop_toBottomOf="@id/artists_amount" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/artist_rw"

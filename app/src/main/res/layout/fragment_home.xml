@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
     tools:context=".home.presentation.HomeFragment">
 
     <ImageView
         android:id="@+id/music_note_icon"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_margin="20dp"
+        android:layout_marginStart="25dp"
         android:src="@drawable/music_note_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,7 +20,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:src="@drawable/ic_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/app_title" />
@@ -38,17 +39,22 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/home_tabs"
         android:layout_width="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        app:tabBackground="@drawable/cutom_tab_indicator"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_tab_indicator_backgorund"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/music_note_icon"
         app:layout_constraintTop_toBottomOf="@+id/music_note_icon"
-        app:tabIndicatorColor="@color/deep_orange"
-        app:tabMinWidth="90dp"
-        app:tabMaxWidth="90dp"
+        app:tabIndicator="@drawable/custom_tab_indicator"
+        app:tabIndicatorColor="@color/orange"
         app:tabIndicatorHeight="4dp"
-        app:tabSelectedTextColor="@color/orange" />
+        app:tabMaxWidth="95dp"
+        app:tabMinWidth="95dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabTextAppearance="@style/tab_text" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
@@ -59,6 +65,5 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/home_tabs"
         app:layout_constraintTop_toBottomOf="@+id/home_tabs" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

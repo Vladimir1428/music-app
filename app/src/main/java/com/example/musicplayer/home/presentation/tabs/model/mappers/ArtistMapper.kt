@@ -8,7 +8,7 @@ class ArtistMapper @Inject constructor(){
     private fun mapToUiArtist(networkArtist: NetworkArtist): UiArtist {
         return UiArtist(
             name = networkArtist.name,
-            albumsAmount = 100,
+            albumsAmount = 1,
             songsAmount = networkArtist.songAmount,
             imgUrl = networkArtist.img
         )

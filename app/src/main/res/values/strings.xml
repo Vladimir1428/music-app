@@ -3,7 +3,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="app_title">Mume</string>
-    <string name="albums_txt">Albums:</string>
-    <string name="songs_txt">Songs:</string>
     <string name="date_added_txt">Date Added</string>
+
+    <string-array name="tabs">
+        <item>Suggested</item>
+        <item>Songs</item>
+        <item>Artists</item>
+        <item>Albums</item>
+        <item>Folders</item>
+    </string-array>
 </resources>

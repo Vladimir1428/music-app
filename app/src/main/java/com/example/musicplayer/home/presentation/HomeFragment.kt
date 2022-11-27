@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.musicplayer.R
 import com.example.musicplayer.databinding.FragmentHomeBinding
 import com.example.musicplayer.home.presentation.tabs.HomeTabAdapter
 import com.google.android.material.tabs.TabLayoutMediator
@@ -29,8 +30,8 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         homeBinding.viewPager.adapter = HomeTabAdapter(this)
-        TabLayoutMediator(homeBinding.homeTabs,homeBinding.viewPager){ tab, position ->
-            tab.text = (position + 1).toString()
+        TabLayoutMediator(homeBinding.homeTabs, homeBinding.viewPager) { tab, position ->
+            tab.text = resources.getStringArray(R.array.tabs)[position]
         }.attach()
     }
 

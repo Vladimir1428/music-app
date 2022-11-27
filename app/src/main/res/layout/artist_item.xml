@@ -34,22 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textColor="@color/grey"
-        android:text="@string/albums_txt"
         app:layout_constraintStart_toStartOf="@id/artist_name_tv"
         app:layout_constraintTop_toBottomOf="@id/artist_name_tv"
-        />
-
-    <TextView
-        android:id="@+id/albums_amount"
-        style="@style/item_sub_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/grey"
-        android:layout_marginStart="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/albums_amount_tv"
-        app:layout_constraintStart_toEndOf="@id/albums_amount_tv"
-        app:layout_constraintTop_toTopOf="@id/albums_amount_tv"
-        tools:text="1" />
+        tools:text="1 Album" />
 
     <View
         android:id="@+id/vertical_divider"
@@ -58,7 +45,7 @@
         android:layout_marginStart="15dp"
         android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="@id/albums_amount_tv"
-        app:layout_constraintStart_toEndOf="@id/albums_amount"
+        app:layout_constraintStart_toEndOf="@id/albums_amount_tv"
         app:layout_constraintTop_toTopOf="@id/albums_amount_tv" />
 
     <TextView
@@ -67,23 +54,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:text="@string/songs_txt"
+        tools:text="20 Songs"
         android:textColor="@color/grey"
         app:layout_constraintStart_toEndOf="@id/vertical_divider"
         app:layout_constraintTop_toTopOf="@id/albums_amount_tv" />
-
-    <TextView
-        android:id="@+id/songs_amount"
-        style="@style/item_sub_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:textColor="@color/grey"
-        app:layout_constraintBottom_toBottomOf="@+id/songs_amount_tv"
-        app:layout_constraintStart_toEndOf="@id/songs_amount_tv"
-        app:layout_constraintTop_toTopOf="@id/albums_amount_tv"
-        tools:text="20" />
-
 
     <ImageView
         android:layout_width="wrap_content"
