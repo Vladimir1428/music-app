@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="header">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">25sp</item>
+        <item name="fontFamily">@font/urw_geometric_bold</item>
+    </style>
+
+    <style name="item_header">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/urw_geometric_bold</item>
+    </style>
+
+    <style name="item_sub_header">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="sub_text">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/urw_geometric_bold</item>
+    </style>
+
+</resources>
