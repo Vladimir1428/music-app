@@ -12,7 +12,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="25dp"
-        android:src="@drawable/music_note_icon"
+        android:src="@drawable/ic_app"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
         style="@style/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="20dp"
         android:text="@string/app_title"
         app:layout_constraintBottom_toBottomOf="@+id/music_note_icon"
         app:layout_constraintStart_toEndOf="@+id/music_note_icon"
@@ -53,6 +53,7 @@
         app:tabMaxWidth="95dp"
         app:tabMinWidth="95dp"
         app:tabMode="scrollable"
+        app:tabTextColor="@color/tab_text_unselected"
         app:tabSelectedTextColor="@color/orange"
         app:tabTextAppearance="@style/tab_text" />
 
